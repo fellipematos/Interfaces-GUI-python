@@ -1,2 +1,2 @@
-## tkinter-Interfaces-GUI
-Estudos Python Interfaces com Tkinter
+## Interfaces GUI
+Estudos Python Interfaces
