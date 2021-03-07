@@ -1,0 +1,8 @@
+text = input('digite algo: ')
+print('Voce digitou {}'.format(text))
+print(type(text))
+print(text.isupper())
+print(text.islower())
+print(text.istitle())
+print(text.isalpha())
+print(text.isnumeric())

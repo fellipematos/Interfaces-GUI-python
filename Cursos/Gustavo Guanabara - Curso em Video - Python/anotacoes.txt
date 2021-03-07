@@ -1,0 +1,310 @@
+print ('hello world')
+
+print (5+5) //escreve 10
+
+print ('5'+'5') // escreve 55
+
+print ('Olá', 5) // ola 5 // 'ola' + 5 === erro
+
+
+---------
+nome = Jon
+idade = 1
+peso = 3
+
+print(nome , idade , peso)
+print ('Nome:' , nome , 'Idade:' , idade , 'Peso:' , peso)
+
+---------
+nome = input ('qual seu nome')
+idade = input  ('qual sua idade')
+peso = input  ('qual seu peso')
+
+print(nome , idade , peso)
+
+---------
+
+TIPOS PRIMITIVOS
+
+int() numero inteiro 5 -8 9 6
+float() reais 4.5 -8.5 0.76 7.0
+bool() logico boleand TTTrue FFFalse
+str() caractere 'palavras'
+
+---------
+metodo = 'ola mundo'
+
+print(metodo)
+print('hey {}'.format(metodo))
+print(f'hey {metodo}')
+
+---------
+COMENTARIOS
+
+# uma linha
+
+'''multiplas
+linhas'''
+
+---------
+OPERADORES
+
++ adicao                5+5== 10
+- subtracao             5-5== 0
+* multiplicao           5*5== 25
+/ divisao               5/2== 2.5
+** potencia             5**2== 2,5
+// divisao inteira      5//2== 2
+% resto da divisao      5%5== 1
+== igual
+
+Ordem operacoes
+1 ()
+2 **
+3 * / // %
+4 + -
+
+exemplo
+5 + 3 * 2 == 11
+3 * 5 + 4 ** 2 == 31
+3 * (5 + 4) ** 2 == 243
+
+---------
+MODULOS
+
+bibliotecas
+Bebida = agua cafe refrigerante
+comida = lanche ovo batata
+doce = bombom bolacha
+
+importa tudo
+import bebida
+
+importa selecionado
+from doce import bombom
+
+math - biblioteca matematica
+
+---------
+ceil - arrendonda para cima
+floor - arredonda para baixo
+trunc - trunca numero remove frente da virgula
+pow - potencia
+sqrt - raiz quadrada
+factorial - fatorial
+
+---------
+import.math
+from.math.import.sqrt,ceil
+
+from math import sqrt, ceil, floor
+n = int(input('digite numero '))
+raiz = sqrt(n)
+print('{}'.format(ceil(raiz))) #ceil acima #floor abaixo
+
+---------
+import random
+print(random.choice(['Estero', 'Fellipe', 'Mariana', 'Bianca', 'Raphael', 'Jeff']))
+
+---------
+manipular string
+
+frase = cadeia de texto = string
+dentro das ''
+
+---------
+fatiamento
+VARIAVEL FRASE
+len(FRASE) - comprimento caracteres
+FRASE.count('o',0,13) - contar quantas letra 'o' ,0,13 fatiamento conta do caracter 0 ao 13
+FRASE.find('deo') - contar quantas 'deo' mostra inicio e fim do caracter
+
+FRASE.find('NAOEXISTI') - retorna -1
+
+---------
+FRASE.replace('python', 'android') - substitui python por android
+FRASE.upper() - maiusculo
+lower() - minusculo
+capitalize() - primeira letra Maiuscula
+title() - espaco proxima letra maiuscula
+strip() - remove espacos no inicio e no final
+rstrip() - remove espacos da direita
+ltrip() - remove espacos da esquerda
+
+---------
+FRASE.split() - troca espaco por divisao - dividir str
+1 str    2str
+python teste
+
+'-'.join(FRASE) - junta str utilizando -
+python-teste
+
+
+
+---------
+ALINHAMENTO
+
+print('Prazer {}'.format(nome))
+print('Prazer {`:20}!'.format(nome))
+print('Prazer {:>20}!'.format(nome))
+print('Prazer {:<20}!'.format(nome))
+print('Prazer {:^20}!'.format(nome))
+print('Prazer {:=^20}!'.format(nome))
+
+
+---------
+CONDICIONAIS
+
+carro.siga()
+if carro.esqueda():
+    bloco_TRUE_
+else:
+    bloco_FALSE_
+carro.pare()
+
+
+---------
+import time
+print('aguarde')
+sleep(3) segundos pausa
+
+---------
+CORES NO TERMINAL
+
+CORISE
+ansi escape sequence
+\033[ m
+style;texto;background
+0;33;44
+
+style
+0 sem
+1 negrito
+4 underline sublinhado
+7 negativo inverte
+
+text
+30 branco
+31 vermelho
+32 verde
+33 amarelo
+34 azul
+35 roxo
+36 verde agua
+37 cinza
+
+background
+40 a 47 == text
+
+
+\033[0;30;41m
+
+
+CORISE PESQUISAR + CORES
+
+exemplo bloco de cores
+nome = 'Teste'
+cores = {'fim':'\033[m', 'azul':'\033[0;34;0m', 'vermelho':'\033[0;31;0m'}
+print('teste {}{}{}'.format(cores['azul'], nome, cores['fim']))
+
+
+
+---------
+repeticao
+
+estrutura de um game tipo mario
+3 espacos 1 maca final
+
+passo
+passo
+passo
+pegar
+
+passo
+repete 3x
+pegar
+
+laco de repeticao
+laco com variavel de controle
+
+laco c no intervalo (1,3)
+    passo
+pega
+
+for txt in range(1,3):
+    passo
+pega
+
+passo
+pula
+passo
+pula
+paaso
+pega
+
+passo
+pula
+repete 2x
+passo
+pegar
+
+for c in range(1,3)
+    passo
+    pula
+passo
+pega
+
+for c in range(1,3):
+    if moeda:
+        pega
+    passo
+    pula
+passo
+pega
+
+for oi in range(0,6):
+    print('OI')
+print('FIM')
+
+
+---------
+
+for in - quanto sabe os passos - sabe o limite
+
+WHILE - quando nao sabe o limite
+
+
+enquanto nao maca
+    passo
+pega
+
+while not maca:
+    passo
+pega
+
+
+enquanto nao maca
+    se chao
+        passo
+    se buraco
+        pule
+    se moeda
+        pega
+pega
+
+
+while not maca:
+    if chao
+        passo
+    if buraco
+        passo
+    if moeda
+        passo
+pega
+
+
+SEI LIMITE
+for ou while
+
+nao sei limite
+while
