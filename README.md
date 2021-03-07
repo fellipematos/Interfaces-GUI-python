@@ -1,2 +1,4 @@
-## Interfaces GUI
-Estudos Python Interfaces
+## Estudos
+
+- Python
+- GO
